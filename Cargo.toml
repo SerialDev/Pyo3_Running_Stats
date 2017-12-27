@@ -1,0 +1,16 @@
+[package]
+name = "pyext-collectors"
+version = "0.1.0"
+authors = ["andres <carlos.mariscal.melgar@gmail.com>"]
+
+
+
+[lib]
+name = "collectors"
+crate-type = ["dylib"]
+
+[dependencies.pyo3]
+version = "0.2"
+features = ["extension-module"]
+
+[dependencies]
