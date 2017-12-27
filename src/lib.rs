@@ -99,7 +99,15 @@ impl RunningStats {
         
         Ok(result)
     }
-    
+
+    fn feed_array(&mut self, val_array:Vec<f64>) -> PyResult<()>{
+        let values = val_array;
+        for elem in values{
+            // println!("{}", elem);
+            self.push(elem);
+        }
+        Ok(())
+    }
 }
 
 
